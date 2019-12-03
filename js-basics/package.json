@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "mdx-deck js-basics.mdx",
+    "build": "mdx-deck build js-basics.mdx --no-html",
+    "build:images": "cp -r images dist/",
+    "help": "mdx-deck"
+  },
+  "devDependencies": {
+    "mdx-deck": "^3.0.8"
+  }
+}
