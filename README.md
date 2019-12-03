@@ -1,2 +1,2 @@
 # Presentations
-* [Basics of JavaScript](https://github.com/aandrewww/presentations/blob/master/js-basics/README.md)
+* [Basics of JavaScript](https://github.com/aandrewww/presentations/tree/master/js-basics)
