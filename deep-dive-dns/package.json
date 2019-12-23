@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "mdx-deck content.mdx",
+    "build": "mdx-deck build content.mdx --no-html",
+    "build:images": "cp -r images dist/",
+    "help": "mdx-deck"
+  },
+  "devDependencies": {
+    "mdx-deck": "^3.0.8"
+  },
+  "resolutions": {
+    "mdx-deck/**/gatsby": "2.18.4"
+  },
+  "dependencies": {}
+}

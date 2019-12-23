@@ -1,0 +1,135 @@
+import { Head, Appear, Image, Invert } from 'mdx-deck';
+import { theme as scorumTheme } from './theme';
+
+export const theme = scorumTheme;
+
+<Head>
+  <title>🕵️‍♂️ Deep dive: domain name system (DNS)</title>
+</Head>
+
+## 🕵️‍♂️ Deep dive
+# Domain Name System <br />(DNS)
+
+---
+
+## Старый-добрый вопрос на собеседовании
+<div>
+<Appear>
+  <p>«Что же случается, когда вы печатаете в адресной строке google.com и нажимаете Enter?»</p>
+</Appear>
+</div>
+
+---
+
+https://github.com/alex/what-happens-when
+
+https://habr.com/ru/company/htmlacademy/blog/254825/
+
+---
+
+# What happens ?
+
+<ul>
+  <Appear>
+    <li>Нажата клавиша «g»</li>
+    <li>Клавиша «enter» нажата до конца</li>
+    <li>Парсинг URL</li>
+    <li>Определение DNS</li>
+    <li>Открытие сокета</li>
+    <li>TLS handshake</li>
+    <li>Протокол HTTP</li>
+    <li>...</li>
+  </Appear>
+</ul>
+
+---
+
+# DNS lookup
+<Image
+  src='https://www.cloudflare.com/img/learning/dns/what-is-dns/dns-lookup-diagram.png'
+/>
+
+---
+
+https://howdns.works/
+
+---
+
+# DNS root server
+<Image
+  src='https://www.cloudflare.com/img/learning/dns/glossary/dns-root-server/dns-root-server.png'
+/>
+
+---
+
+https://root-servers.org/
+https://bit.ly/2Shq6kU
+<Image
+  src='https://i.stack.imgur.com/eKewl.png'
+/>
+
+---
+
+# DNS Types
+
+<ul>
+  <Appear>
+    <li>DNS Resolver</li>
+    <li>DNS Root Server</li>
+    <li>Authoritative DNS Server</li>
+  </Appear>
+</ul>
+
+---
+
+# DNS Records
+<ul>
+  <Appear>
+    <li>Address Mapping record (A Record)</li>
+    <li>Canonical Name record (CNAME Record)</li>
+    <li>Mail exchanger record (MX Record)</li>
+    <li>Name Server records (NS Record)</li>
+    <li>Text Record (TXT Record)</li>
+    <li>AAAA, PTR, CERT, SRV, SOA</li>
+    <li>https://bit.ly/2ENhnig</li>
+  </Appear>
+</ul>
+
+---
+
+# DNS Spoofing
+<Image src="https://habrastorage.org/webt/zm/3b/5t/zm3b5ttg_mk9vcftxwiiluvc0i4.png" />
+
+---
+
+# DNS Propogation
+https://dnsmap.io/
+
+---
+
+# DNS Speed Benchmark
+https://www.dnsperf.com/dns-speed-benchmark/
+
+---
+
+# CLI commands
+<ul>
+  <Appear>
+    <li>whois</li>
+    <li>dig</li>
+    <li>nslookup (-type=ns)</li>
+    <li>telnet</li>
+    <li>ping</li>
+  </Appear>
+</ul>
+
+
+---
+
+# Reference
+- https://bit.ly/2PRTtc5
+- https://bit.ly/2Shq6kU
+- https://bit.ly/2Sin6on
+- https://bit.ly/2s3MfbS
+- https://bit.ly/2rkjCqh
+- https://bit.ly/397FlTi
